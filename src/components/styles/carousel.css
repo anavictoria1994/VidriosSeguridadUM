@@ -1,5 +1,12 @@
+.colornavbar{
+    background-color: #208304;
+}
+
 .margi{
     margin-top: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    
 }
 
 .carousel{
@@ -9,4 +16,20 @@
 
 .mision{
     margin-top: 25px;
+    
+}
+
+.logo{
+    width: 50%;
+    height: 50%;
+}
+
+.footer{
+    background-color: #208304;
+    
+}
+
+.letras{
+    font-size: 20px;
+    color: #fff;
 }
