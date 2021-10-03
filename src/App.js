@@ -1,14 +1,15 @@
 
 import './App.css';
 import * as ReactBootStrap from "react-bootstrap";
-import division1 from './assets/img/divin1.png';
+import division1 from './assets/img/division1.jpg';
 import pasamanos1 from './assets/img/pasamanos.jpg';
-import espejos from './assets/img/espejos.jpg';
+import espejos from './assets/img/espejos.png';
 import mision from './assets/img/mision.jpg';
 import vision from './assets/img/vision.png';
 import logo from './assets/img/UMLOGO.png';
 import objetivo from './assets/img/objetivo.jpg';
 import './components/styles/carousel.css';
+import Cards from'./components/Cards.js'
 
 function App() {
   return (
@@ -72,16 +73,15 @@ function App() {
         </ReactBootStrap.Carousel.Item>
       </ReactBootStrap.Carousel>
       </div>
-
-      <div className="mision">
+      <div>
+      </div>
+      <div class="mision">
       <main class= "col-md-12">
       <section class="altura-a-b">
-          <div class="row">
+          <div class="row align-items-end">
             <div class="col-12 col-sm-4 text-centar" >
-              
-              <h5 class="altura-texto"> MISION </h5>
               <img
-                className="carousel"
+                className="img-fluid"
                 src ={mision}
               />
               <p>Lávate las manos con frecuencia. Usa agua y jabón o un 
@@ -89,10 +89,8 @@ function App() {
                 sea necesario.</p>
             </div>
             <div class="col-12 col-sm-4 text-centar">
-              
-              <h5 class="altura-texto">VISION</h5>
               <img
-                className="carousel"
+                className="img-fluid"
                 src ={vision}
               />
               <p>Utiliza mascarilla cuando no sea posible mantener 
@@ -100,10 +98,8 @@ function App() {
                 posible.</p>
             </div>
             <div class="col-12 col-sm-4 text-centar">
-             
-              <h5 class="altura-texto">OBJETIVOS</h5>
               <img
-                className="carousel"
+                className="img-fluid"
                 src ={objetivo}
               />
               <p>Mantén una distancia de seguridad con personas que tosan 

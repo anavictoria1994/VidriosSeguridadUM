@@ -10,13 +10,12 @@
 }
 
 .carousel{
-    width: 98%;
+    object-fit: contain;
     height: 450px;
 }
 
 .mision{
-    margin-top: 25px;
-    
+    margin-top: 25px;        
 }
 
 .logo{
