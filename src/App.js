@@ -75,7 +75,7 @@ function App() {
       </div>
       <div>
       </div>
-      <div className="mision">
+      <div class="mision">
       <main class= "col-md-12">
       <section class="altura-a-b">
           <div class="row align-items-end">
