@@ -1,7 +1,7 @@
 
 import './App.css';
 import * as ReactBootStrap from "react-bootstrap";
-import division1 from './assets/img/divin1.png';
+import division1 from './assets/img/division1.jpg';
 import pasamanos1 from './assets/img/pasamanos.jpg';
 import espejos from './assets/img/espejos.jpg';
 import mision from './assets/img/misionn.jpeg';
@@ -9,7 +9,8 @@ import vision from './assets/img/visionn.jpeg';
 import logo from './assets/img/UMLOGO.png';
 import objetivo from './assets/img/objetivoss.jpeg';
 import './components/styles/carousel.css';
- 
+import Cards from'./components/Cards.js'
+
 function App() {
   return (
     <div className="App">
@@ -72,13 +73,14 @@ function App() {
         </ReactBootStrap.Carousel.Item>
       </ReactBootStrap.Carousel>
       </div>
-
+      <div>
+      </div>
       <div className="mision">
       <main class= "col-md-12">
       <section class="altura-a-b">
-          <div class="row">
+          <div class="row align-items-end">
             <div class="col-12 col-sm-4 text-centar" >
-              
+
               <img
                 className="carousel"
                 src ={mision}
@@ -88,7 +90,6 @@ function App() {
                 sea necesario.</p>
             </div>
             <div class="col-12 col-sm-4 text-centar">
-              
               <img
                 className="carousel"
                 src ={vision}
@@ -110,7 +111,6 @@ function App() {
       </section>
      </main>
     </div>
-
       <div>
         <footer className="footer">
       <   div class="row m-0 col-md-12 align-items-center">
