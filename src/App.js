@@ -4,12 +4,12 @@ import * as ReactBootStrap from "react-bootstrap";
 import division1 from './assets/img/divin1.png';
 import pasamanos1 from './assets/img/pasamanos.jpg';
 import espejos from './assets/img/espejos.jpg';
-import mision from './assets/img/mision.jpg';
-import vision from './assets/img/vision.png';
+import mision from './assets/img/misionn.jpeg';
+import vision from './assets/img/visionn.jpeg';
 import logo from './assets/img/UMLOGO.png';
-import objetivo from './assets/img/objetivo.jpg';
+import objetivo from './assets/img/objetivoss.jpeg';
 import './components/styles/carousel.css';
-
+ 
 function App() {
   return (
     <div className="App">
@@ -79,7 +79,6 @@ function App() {
           <div class="row">
             <div class="col-12 col-sm-4 text-centar" >
               
-              <h5 class="altura-texto"> MISION </h5>
               <img
                 className="carousel"
                 src ={mision}
@@ -90,7 +89,6 @@ function App() {
             </div>
             <div class="col-12 col-sm-4 text-centar">
               
-              <h5 class="altura-texto">VISION</h5>
               <img
                 className="carousel"
                 src ={vision}
@@ -100,8 +98,6 @@ function App() {
                 posible.</p>
             </div>
             <div class="col-12 col-sm-4 text-centar">
-             
-              <h5 class="altura-texto">OBJETIVOS</h5>
               <img
                 className="carousel"
                 src ={objetivo}
