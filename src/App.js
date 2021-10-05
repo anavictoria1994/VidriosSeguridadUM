@@ -1,27 +1,28 @@
 
 import './App.css';
 import * as ReactBootStrap from "react-bootstrap";
-import division1 from './assets/img/division1.jpg';
-import pasamanos1 from './assets/img/pasamanos.jpg';
-import espejos from './assets/img/espejos.jpg';
-import mision from './assets/img/misionn.jpeg';
-import vision from './assets/img/visionn.jpeg';
 import logo from './assets/img/UMLOGO.png';
-import objetivo from './assets/img/objetivoss.jpeg';
-import './components/styles/carousel.css';
-import Cards from'./components/Cards.js'
+import Contacto from './components/Contacto';
+import Inicio from './components/Inicio';
+import { BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  NavLink } 
+  from 'react-router-dom';
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <div>
       <ReactBootStrap.Navbar collapseOnSelect expand="lg" variant="dark" className="colornavbar">
-      <ReactBootStrap.Navbar.Brand  href="#inicio">Vidrios Seguridad UM</ReactBootStrap.Navbar.Brand>
+      <Link  to="/">Vidrios Seguridad UM</Link>
       <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
         <ReactBootStrap.Nav className="mr-auto">
-        <ReactBootStrap.Nav.Link href="#inicio">Inicio</ReactBootStrap.Nav.Link>
-        <ReactBootStrap.Nav.Link href="#contacto">Contacto</ReactBootStrap.Nav.Link>
+        <Link to="/">Inicio</Link>
+        <Link to="/contacto">Contacto</Link>
         <ReactBootStrap.NavDropdown title="Productos" id="collasible-nav-dropdown">
         <ReactBootStrap.NavDropdown.Item href="#action/3.1">Divisiones de Baños</ReactBootStrap.NavDropdown.Item>
         <ReactBootStrap.NavDropdown.Item href="#action/3.2">Pasamanos</ReactBootStrap.NavDropdown.Item>
@@ -36,82 +37,14 @@ function App() {
         </ReactBootStrap.Nav>
       </ReactBootStrap.Navbar.Collapse>
       </ReactBootStrap.Navbar>
-      </div>
-      <div className="margi">
-      <ReactBootStrap.Carousel>
-        <ReactBootStrap.Carousel.Item>
-          <img
-            className="carousel"
-            src ={division1}
-            alt="Second slide"
-          />
-          <ReactBootStrap.Carousel.Caption>
-            <h3>DIVISIONES DE BAÑOS</h3>
-          </ReactBootStrap.Carousel.Caption>
-        </ReactBootStrap.Carousel.Item>
-        <ReactBootStrap.Carousel.Item>
-          <img 
-            className="carousel"
-            src ={espejos}
-            alt="Second slide"
-            
-          />
-          <ReactBootStrap.Carousel.Caption>
-            <h3>ESPEJOS</h3>
-          </ReactBootStrap.Carousel.Caption>
-        </ReactBootStrap.Carousel.Item>
-        <ReactBootStrap.Carousel.Item>
-          <img
-            className="carousel"
-            src ={pasamanos1}
-            alt="Second slide"
-          />
-
-          <ReactBootStrap.Carousel.Caption>
-            <h3>PASAMANOS</h3>
-          </ReactBootStrap.Carousel.Caption>
-        </ReactBootStrap.Carousel.Item>
-      </ReactBootStrap.Carousel>
-      </div>
-      <div>
-      </div>
-      <div class="mision">
-      <main class= "col-md-12">
-      <section class="altura-a-b">
-          <div class="row align-items-end">
-            <div class="col-12 col-sm-4 text-centar" >
-
-              <img
-                className="carousel"
-                src ={mision}
-              />
-              <p>Lávate las manos con frecuencia. Usa agua y jabón o un 
-                desinfectante de manos a base de alcohol, cuantas veces 
-                sea necesario.</p>
-            </div>
-            <div class="col-12 col-sm-4 text-centar">
-              <img
-                className="carousel"
-                src ={vision}
-              />
-              <p>Utiliza mascarilla cuando no sea posible mantener 
-                el distanciamiento físico o todo el tiempo que te sea
-                posible.</p>
-            </div>
-            <div class="col-12 col-sm-4 text-centar">
-              <img
-                className="carousel"
-                src ={objetivo}
-              />
-              <p>Mantén una distancia de seguridad con personas que tosan 
-                o estornuden, recuerda que en todo momento estás expuesto 
-                al virus, por lo tanto sé cuidadoso.</p>
-            </div>
-          </div>
-      </section>
-     </main>
-    </div>
-      <div>
+      <Switch>
+        <Route path="/" exact>
+          <Inicio></Inicio>
+        </Route>
+        <Route path="/contacto">
+          <Contacto></Contacto>
+        </Route>
+      </Switch>
         <footer className="footer">
       <   div class="row m-0 col-md-12 align-items-center">
             <div class="d-inline-block col-md-4" >
@@ -139,6 +72,7 @@ function App() {
       </div>
     
     </div>
+    </Router>
   );
 }
 
