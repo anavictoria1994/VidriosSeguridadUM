@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './Card'
 import Division from '../assets/img/division1.jpg'
-import Espejos from '../assets/img/espejos.png'
+import Espejos from '../assets/img/espejos.jpg'
 import Pasamanos from '../assets/img/pasamanos.jpg'
 
 const cards =[
